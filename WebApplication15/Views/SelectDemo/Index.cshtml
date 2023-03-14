@@ -1,0 +1,17 @@
+﻿@model ShowSelectViewModel
+
+<form method="post" action="/selectdemo/post">
+    <div class="row">
+        
+        <div class="col-md-6 offset-md-3">
+            <select class="form-select" name="id">
+                @foreach(ColorOption option in Model.ColorOptions)
+                {
+                    <option value="@option.Id">@option.Color</option>
+                }
+            </select>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </div>
+</form>
+

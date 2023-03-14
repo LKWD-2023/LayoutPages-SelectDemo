@@ -1,0 +1,29 @@
+﻿@model List<Employee>
+
+<div class="row">
+
+    <div class="col-md-6 offset-md-3">
+        <select class="form-select" name="id">
+            @foreach (var employee in Model)
+            {
+                if (employee.BirthDate != null)
+                {
+                    <option value="@employee.Id">@employee.FirstName @employee.LastName - @employee.BirthDate.Value.ToShortDateString()</option>
+                }
+                else 
+                {
+                    <option value="@employee.Id">@employee.FirstName @employee.LastName</option>
+                }
+            }
+        </select>
+        @if (DateTime.Now.Hour % 2 == 0)
+        {
+            <button class="btn btn-dark">Submit</button>
+        }
+        else
+        {
+            <button class="btn btn-light">Submit</button>
+        }
+    </div>
+</div>
+
