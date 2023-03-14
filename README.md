@@ -1,6 +1,6 @@
 # Steps for creating an MVC project using .Net core
 
-Choose the folliwng template in visual studio:
+Choose the following template in visual studio:
 
 <img width="924" alt="image" src="https://user-images.githubusercontent.com/126539919/224893781-6bb112f9-fbc4-46b9-b8d8-122aa0bc1dd1.png">
 
